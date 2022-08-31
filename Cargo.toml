@@ -6,10 +6,14 @@ version = "0.1.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-grammers-client = {git = "https://github.com/Lonami/grammers.git", features = ["proxy"]}
-grammers-mtsender = {git = "https://github.com/Lonami/grammers.git"}
-grammers-session = {git = "https://github.com/Lonami/grammers.git"}
-grammers-tl-types = {git = "https://github.com/Lonami/grammers.git"}
+# grammers-client = {path = "grammers/lib/grammers-client", features = ["proxy"]}
+# grammers-mtsender = {path = "grammers/lib/grammers-mtsender"}
+# grammers-session = {path = "grammers/lib/grammers-session"}
+# grammers-tl-types = {path = "grammers/lib/grammers-tl-types"}
+grammers-client = {git = "https://github.com/Lonami/grammers.git", features = ["proxy"], rev = "a21d385"}
+grammers-mtsender = {git = "https://github.com/Lonami/grammers.git", rev = "a21d385"}
+grammers-session = {git = "https://github.com/Lonami/grammers.git", rev = "a21d385"}
+grammers-tl-types = {git = "https://github.com/Lonami/grammers.git", rev = "a21d385"}
 log = "0.4.14"
 simple_logger = {version = "1.11.0", default-features = false, features = ["colors"]}
 tokio = {version = "1.5.0", features = ["rt", "signal"]}

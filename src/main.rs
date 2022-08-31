@@ -42,7 +42,7 @@ async fn async_main() -> Result<()> {
         api_id,
         api_hash: api_hash.clone(),
         params: InitParams {
-            proxy_url: Some("socks5://127.0.0.1:1080".to_string()),
+            proxy_url: Some("socks5://127.0.0.1:1086".to_string()),
             ..Default::default()
         },
     })
@@ -103,13 +103,15 @@ async fn async_main() -> Result<()> {
             match message.chat() {
                 Chat::Group(_group) => {
                     if let Some(Chat::User(user)) = message.sender() {
+                        // if !user.0.min {
                         let input_user = user.pack().try_to_input_user().unwrap();
                         match get_full_user(client_handle.clone(), input_user).await {
-                            Ok(user) => {
-                                warn!("{:#?}", user);
+                            Ok(_user) => {
+                                warn!("{:#?}", 11);
                             }
                             Err(error) => error!("{}", error.to_string()),
                         }
+                        // }
                     }
                 }
                 _ => {}

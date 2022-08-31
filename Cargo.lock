@@ -22,9 +22,9 @@ dependencies = [
 
 [[package]]
 name = "android_system_properties"
-version = "0.1.4"
+version = "0.1.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d7ed72e1635e121ca3e79420540282af22da58be50de153d36f81ddc6b83aa9e"
+checksum = "819e7219dbd41043ac279b19830f2efc897156490d7fd6ea916720117ee66311"
 dependencies = [
  "libc",
 ]
@@ -220,9 +220,9 @@ dependencies = [
 
 [[package]]
 name = "futures-channel"
-version = "0.3.23"
+version = "0.3.24"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2bfc52cbddcfd745bf1740338492bb0bd83d76c67b445f91c5fb29fae29ecaa1"
+checksum = "30bdd20c28fadd505d0fd6712cdfcb0d4b5648baf45faef7f852afb2399bb050"
 dependencies = [
  "futures-core",
 ]
@@ -241,9 +241,9 @@ checksum = "bbf4d2a7a308fd4578637c0b17c7e1c7ba127b8f6ba00b29f717e9655d85eb68"
 
 [[package]]
 name = "futures-macro"
-version = "0.3.23"
+version = "0.3.24"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0db9cce532b0eae2ccf2766ab246f114b56b9cf6d445e00c2549fbc100ca045d"
+checksum = "42cd15d1c7456c04dbdf7e88bcd69760d74f3a798d6444e16974b505b0e62f17"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -252,15 +252,15 @@ dependencies = [
 
 [[package]]
 name = "futures-task"
-version = "0.3.23"
+version = "0.3.24"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "842fc63b931f4056a24d59de13fb1272134ce261816e063e634ad0c15cdc5306"
+checksum = "a6508c467c73851293f390476d4491cf4d227dbabcd4170f3bb6044959b294f1"
 
 [[package]]
 name = "futures-util"
-version = "0.3.23"
+version = "0.3.24"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f0828a5471e340229c11c77ca80017937ce3c58cb788a17e5f1c2d5c485a9577"
+checksum = "44fb6cb1be61cc1d2e43b262516aafcf63b241cffdb1d3fa115f91d9c7b09c90"
 dependencies = [
  "futures-core",
  "futures-macro",
@@ -307,7 +307,7 @@ dependencies = [
 [[package]]
 name = "grammers-client"
 version = "0.3.0"
-source = "git+https://github.com/Lonami/grammers.git#3c401b366c9f69e0b9405afba51d72c0d13a30dd"
+source = "git+https://github.com/Lonami/grammers.git?rev=b1cfcd1#b1cfcd1efc96913d525ecd489001106d84084cde"
 dependencies = [
  "chrono",
  "futures-util",
@@ -328,7 +328,7 @@ dependencies = [
 [[package]]
 name = "grammers-crypto"
 version = "0.3.0"
-source = "git+https://github.com/Lonami/grammers.git#3c401b366c9f69e0b9405afba51d72c0d13a30dd"
+source = "git+https://github.com/Lonami/grammers.git?rev=b1cfcd1#b1cfcd1efc96913d525ecd489001106d84084cde"
 dependencies = [
  "aes",
  "getrandom",
@@ -343,7 +343,7 @@ dependencies = [
 [[package]]
 name = "grammers-mtproto"
 version = "0.3.0"
-source = "git+https://github.com/Lonami/grammers.git#3c401b366c9f69e0b9405afba51d72c0d13a30dd"
+source = "git+https://github.com/Lonami/grammers.git?rev=b1cfcd1#b1cfcd1efc96913d525ecd489001106d84084cde"
 dependencies = [
  "bytes",
  "crc32fast",
@@ -359,7 +359,7 @@ dependencies = [
 [[package]]
 name = "grammers-mtsender"
 version = "0.3.0"
-source = "git+https://github.com/Lonami/grammers.git#3c401b366c9f69e0b9405afba51d72c0d13a30dd"
+source = "git+https://github.com/Lonami/grammers.git?rev=b1cfcd1#b1cfcd1efc96913d525ecd489001106d84084cde"
 dependencies = [
  "bytes",
  "grammers-mtproto",
@@ -374,7 +374,7 @@ dependencies = [
 [[package]]
 name = "grammers-session"
 version = "0.3.0"
-source = "git+https://github.com/Lonami/grammers.git#3c401b366c9f69e0b9405afba51d72c0d13a30dd"
+source = "git+https://github.com/Lonami/grammers.git?rev=b1cfcd1#b1cfcd1efc96913d525ecd489001106d84084cde"
 dependencies = [
  "grammers-tl-gen",
  "grammers-tl-parser",
@@ -385,7 +385,7 @@ dependencies = [
 [[package]]
 name = "grammers-tl-gen"
 version = "0.3.0"
-source = "git+https://github.com/Lonami/grammers.git#3c401b366c9f69e0b9405afba51d72c0d13a30dd"
+source = "git+https://github.com/Lonami/grammers.git?rev=b1cfcd1#b1cfcd1efc96913d525ecd489001106d84084cde"
 dependencies = [
  "grammers-tl-parser",
 ]
@@ -393,7 +393,7 @@ dependencies = [
 [[package]]
 name = "grammers-tl-parser"
 version = "1.0.1"
-source = "git+https://github.com/Lonami/grammers.git#3c401b366c9f69e0b9405afba51d72c0d13a30dd"
+source = "git+https://github.com/Lonami/grammers.git?rev=b1cfcd1#b1cfcd1efc96913d525ecd489001106d84084cde"
 dependencies = [
  "crc32fast",
 ]
@@ -401,7 +401,7 @@ dependencies = [
 [[package]]
 name = "grammers-tl-types"
 version = "0.3.0"
-source = "git+https://github.com/Lonami/grammers.git#3c401b366c9f69e0b9405afba51d72c0d13a30dd"
+source = "git+https://github.com/Lonami/grammers.git?rev=b1cfcd1#b1cfcd1efc96913d525ecd489001106d84084cde"
 dependencies = [
  "grammers-tl-gen",
  "grammers-tl-parser",
@@ -458,13 +458,14 @@ dependencies = [
 
 [[package]]
 name = "iana-time-zone"
-version = "0.1.46"
+version = "0.1.47"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ad2bfd338099682614d3ee3fe0cd72e0b6a41ca6a87f6a74a3bd593c91650501"
+checksum = "4c495f162af0bf17656d0014a0eded5f3cd2f365fdd204548c2869db89359dc7"
 dependencies = [
  "android_system_properties",
  "core-foundation-sys",
  "js-sys",
+ "once_cell",
  "wasm-bindgen",
  "winapi 0.3.9",
 ]
@@ -939,18 +940,18 @@ dependencies = [
 
 [[package]]
 name = "thiserror"
-version = "1.0.32"
+version = "1.0.33"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f5f6586b7f764adc0231f4c79be7b920e766bb2f3e51b3661cdb263828f19994"
+checksum = "3d0a539a918745651435ac7db7a18761589a94cd7e94cd56999f828bf73c8a57"
 dependencies = [
  "thiserror-impl",
 ]
 
 [[package]]
 name = "thiserror-impl"
-version = "1.0.32"
+version = "1.0.33"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "12bafc5b54507e0149cdf1b145a5d80ab80a90bcd9275df43d4fff68460f6c21"
+checksum = "c251e90f708e16c49a16f4917dc2131e75222b72edfa9cb7f7c58ae56aae0c09"
 dependencies = [
  "proc-macro2",
  "quote",
