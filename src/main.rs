@@ -3,7 +3,7 @@ use grammers_client::{Client, Config, InitParams, SignInError, Update};
 use grammers_mtsender::InvocationError;
 use grammers_session::Session;
 use grammers_tl_types as tl;
-use log::{self, error, warn};
+use log::{self, error, info, warn};
 use simple_logger::SimpleLogger;
 use std::env;
 use std::io::{self, BufRead as _, Write as _};
@@ -107,7 +107,7 @@ async fn async_main() -> Result<()> {
                         let input_user = user.pack().try_to_input_user().unwrap();
                         match get_full_user(client_handle.clone(), input_user).await {
                             Ok(_user) => {
-                                warn!("{:#?}", 11);
+                                warn!("get_full_user success");
                             }
                             Err(error) => error!("{}", error.to_string()),
                         }
